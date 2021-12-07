@@ -1,17 +1,19 @@
-﻿<UserControl x:Class="SignUp_GUI.View_Login"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:SignUp_GUI"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+﻿<Window x:Class="SignUp_GUI.View_Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SignUp_GUI"
+        mc:Ignorable="d"
+        Title="View_Login" Height="450" Width="800">
     <Grid>
-        <PasswordBox HorizontalAlignment="Left" Margin="170,287,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="170,242,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="363,260,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="170,385,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="268,385,0,0" VerticalAlignment="Top"/>
+        <PasswordBox Name="box_id" HorizontalAlignment="Left" Margin="318,198,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="box_pwd" HorizontalAlignment="Left" Margin="318,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Name="btn_login" Content="로그인" HorizontalAlignment="Left" Margin="450,175,0,0" VerticalAlignment="Top" Height="41" Width="53"/>
+        <Button Name="btn_signup" Content="회원가입" HorizontalAlignment="Left" Margin="450,258,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="318,260,0,0" TextWrapping="Wrap" Text="계정이 없으신가요?" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="263,175,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="55"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="263,198,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="55"/>
 
     </Grid>
-</UserControl>
+</Window>

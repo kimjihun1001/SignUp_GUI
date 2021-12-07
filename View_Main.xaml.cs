@@ -15,25 +15,13 @@ using System.Windows.Shapes;
 namespace SignUp_GUI
 {
     /// <summary>
-    /// View_Login.xaml에 대한 상호 작용 논리
+    /// View_Main.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class View_Login : Window
+    public partial class View_Main : Window
     {
-        public View_Login()
+        public View_Main()
         {
             InitializeComponent();
-        }
-
-        public void btn_login_Click(object sender, RoutedEventArgs e)
-        {
-            View_Main view_Main = new View_Main();
-            this.Hide();
-            view_Main.Show();
-        }
-
-        public void btn_signup_Click(object sender, RoutedEventArgs e)
-        {
-            this.Hide();
         }
     }
 }
