@@ -7,10 +7,12 @@
         mc:Ignorable="d"
         Title="View_SearchImage" Height="450" Width="800">
     <Grid>
-        <ScrollViewer HorizontalAlignment="Center" Height="314" Margin="0,110,0,0" VerticalAlignment="Top" Width="719"/>
-        <TextBox HorizontalAlignment="Center" Height="52" Margin="0,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="462"/>
+        <ScrollViewer HorizontalAlignment="Center" Height="314" Margin="0,110,0,0" VerticalAlignment="Top" Width="719">
+            <WrapPanel Name="wp_search" />
+        </ScrollViewer>
+        <TextBox Name="box_search"  HorizontalAlignment="Center" Height="52" Margin="0,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="462"/>
         <Button Name="btn_back" Content="뒤로 가기" HorizontalAlignment="Left" Height="52" Margin="40,35,0,0" VerticalAlignment="Top" Width="88"/>
-        <Button Name="btn_search" Content="검색" HorizontalAlignment="Left" Height="52" Margin="672,35,0,0" VerticalAlignment="Top" Width="88" Click="Button_Click"/>
+        <Button Name="btn_search" Content="검색" HorizontalAlignment="Left" Height="52" Margin="672,35,0,0" VerticalAlignment="Top" Width="88"/>
 
     </Grid>
 </Window>

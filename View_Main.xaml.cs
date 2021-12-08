@@ -22,6 +22,15 @@ namespace SignUp_GUI
         public View_Main()
         {
             InitializeComponent();
+            btn_searchImage.Click += btn_searchImage_Click;
         }
+
+        public void btn_searchImage_Click(object sender, RoutedEventArgs e)
+        {
+            View_SearchImage view_SearchImage = new View_SearchImage();
+            this.Hide();
+            view_SearchImage.Show();
+        }
+
     }
 }

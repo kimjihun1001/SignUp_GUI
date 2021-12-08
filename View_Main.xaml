@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="View_Main" Height="450" Width="800">
     <Grid>
-        <Button Content="이미지 검색" HorizontalAlignment="Center" Height="43" Margin="0,85,0,0" VerticalAlignment="Top" Width="195"/>
+        <Button Name="btn_searchImage" Content="이미지 검색" HorizontalAlignment="Center" Height="43" Margin="0,85,0,0" VerticalAlignment="Top" Width="195"/>
         <Button Content="최근 검색어" HorizontalAlignment="Center" Height="43" Margin="0,143,0,0" VerticalAlignment="Top" Width="195"/>
         <Button Content="정보 변경" HorizontalAlignment="Center" Height="44" Margin="0,200,0,0" VerticalAlignment="Top" Width="195"/>
         <Button Content="회원 탈퇴" HorizontalAlignment="Center" Height="44" Margin="0,258,0,0" VerticalAlignment="Top" Width="195"/>

@@ -28,6 +28,9 @@ namespace SignUp_GUI
 
         private void btn_search_Click(object sender, RoutedEventArgs e)
         {
+            NaverAPI naverAPI = new NaverAPI();
+            naverAPI.NaverSearchImage(box_search.Text);
+            wp_search.Children.Add(naverAPI);
 
         }
 
