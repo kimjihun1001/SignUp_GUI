@@ -22,6 +22,8 @@ namespace SignUp_GUI
         public View_Login()
         {
             InitializeComponent();
+            btn_login.Click += btn_login_Click;
+            btn_signup.Click += btn_signup_Click;
         }
 
         public void btn_login_Click(object sender, RoutedEventArgs e)
@@ -33,7 +35,10 @@ namespace SignUp_GUI
 
         public void btn_signup_Click(object sender, RoutedEventArgs e)
         {
+            View_SignUp view_SignUp = new View_SignUp();
+
             this.Hide();
+            view_SignUp.Show();
         }
     }
 }
