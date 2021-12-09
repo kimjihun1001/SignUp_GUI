@@ -107,17 +107,26 @@
     <Compile Include="Log.cs" />
     <Compile Include="TreatDB_mysql.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="View_ChangeInformation.xaml.cs">
+      <DependentUpon>View_ChangeInformation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View_Login.xaml.cs">
       <DependentUpon>View_Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="View_Main.xaml.cs">
       <DependentUpon>View_Main.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View_SearchedWord.xaml.cs">
+      <DependentUpon>View_SearchedWord.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View_SearchImage.xaml.cs">
       <DependentUpon>View_SearchImage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View_SignUp.xaml.cs">
       <DependentUpon>View_SignUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View_Withdraw.xaml.cs">
+      <DependentUpon>View_Withdraw.xaml</DependentUpon>
     </Compile>
     <Page Include="Alert.xaml">
       <SubType>Designer</SubType>
@@ -139,6 +148,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View_ChangeInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View_Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -147,11 +160,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View_SearchedWord.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View_SearchImage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View_SignUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View_Withdraw.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -42,6 +42,7 @@ namespace SignUp_GUI
                 Log log = new Log();
                 log.Id = View_Login.currentUser.Id;
                 log.Searchword = box_search.Text;
+                TreatDB_mysql.logList.Add(log);
                 TreatDB_mysql treatDB_Mysql = new TreatDB_mysql();
                 treatDB_Mysql.UploadLogDB();
             }
