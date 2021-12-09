@@ -26,6 +26,12 @@ namespace SignUp_GUI
             InitializeComponent();
             btn_login.Click += btn_login_Click;
             btn_signup.Click += btn_signup_Click;
+            btn_back.Click += Btn_back_Click;
+        }
+
+        private void Btn_back_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.MainWindowInstance.Show();
         }
 
         public void btn_login_Click(object sender, RoutedEventArgs e)

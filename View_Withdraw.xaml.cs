@@ -32,6 +32,17 @@ namespace SignUp_GUI
             alert.block_alert.Text = "탈퇴 완료";
             alert.Show();
 
+            foreach (User user in TreatDB_mysql.userList)
+            {
+                if (user.Id == View_Login.currentUser.Id)
+                {
+                    TreatDB_mysql.userList.Remove(user);
+                    break;
+                }
+            }
+            TreatDB_mysql treatDB_Mysql = new TreatDB_mysql();
+            treatDB_Mysql.UploadUserDB();
+
             this.Close();
             View_Login view_Login = new View_Login();
             view_Login.Show();

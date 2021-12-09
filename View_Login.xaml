@@ -14,6 +14,7 @@
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="318,260,0,0" TextWrapping="Wrap" Text="계정이 없으신가요?" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Height="18" Margin="263,175,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="55"/>
         <TextBlock HorizontalAlignment="Left" Height="18" Margin="263,198,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="55"/>
+        <Button Name="btn_back" Content="Button" HorizontalAlignment="Left" Height="37" Margin="85,50,0,0" VerticalAlignment="Top" Width="41"/>
 
     </Grid>
 </Window>

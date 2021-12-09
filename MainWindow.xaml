@@ -8,6 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid Name="MainGrid">
         <Button Name="btn_start" Content="시작" HorizontalAlignment="Center" Height="60" VerticalAlignment="Center" Width="270"/>
+        <TextBlock Name="box_0" HorizontalAlignment="Left" Margin="10,247,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <Button Name="btn_3" Content="Button" HorizontalAlignment="Left" Height="49" Margin="185,247,0,0" VerticalAlignment="Top" Width="26"/>
 
     </Grid>
 </Window>

@@ -8,7 +8,7 @@
         Title="View_SignUp" Height="450" Width="800">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="260,103,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="70"/>
-        <TextBox Name="box_id" HorizontalAlignment="Left" Height="20" Margin="335,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" MaxLength="4"/>
+        <TextBox Name="box_id" HorizontalAlignment="Left" Height="20" Margin="335,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" />
         <Button Name="btn_id" Content="중복 확인" HorizontalAlignment="Left" Height="20" Margin="440,103,0,0" VerticalAlignment="Top" Width="80"/>
         <TextBlock HorizontalAlignment="Left" TextAlignment="Center" Height="39" Margin="260,50,0,0" TextWrapping="Wrap" Text="회원가입" VerticalAlignment="Top" FontSize="30" Width="260"/>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="260,131,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="70"/>

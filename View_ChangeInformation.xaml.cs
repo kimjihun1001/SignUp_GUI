@@ -88,6 +88,7 @@ namespace SignUp_GUI
                     }
                     check_phone = true;
                 }
+              
             }
 
             if (check_phone == true)

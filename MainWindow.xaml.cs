@@ -27,9 +27,12 @@ namespace SignUp_GUI
             get
             {
                 if (MainWindowIns == null)
+                {
                     MainWindowIns = new MainWindow();
+                }
                 return MainWindowIns;
             }
+            
         }
 
         public MainWindow()
@@ -37,6 +40,13 @@ namespace SignUp_GUI
             // 초기화하는 과정 - xaml과 연결하기 등
             InitializeComponent();
             btn_start.Click += btn_start_Click;
+            btn_3.Click += Btn_3_Click;
+
+        }
+
+        private void Btn_3_Click(object sender, RoutedEventArgs e)
+        {
+            box_0.Text = "3";
         }
 
         public void btn_start_Click(object sender, RoutedEventArgs e)
