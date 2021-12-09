@@ -23,6 +23,8 @@ namespace SignUp_GUI
         {
             InitializeComponent();
             btn_searchImage.Click += btn_searchImage_Click;
+
+            block_welcome.Text = View_Login.currentUser.Name + "님, 안녕하세요.";
         }
 
         public void btn_searchImage_Click(object sender, RoutedEventArgs e)

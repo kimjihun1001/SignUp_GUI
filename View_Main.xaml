@@ -7,11 +7,13 @@
         mc:Ignorable="d"
         Title="View_Main" Height="450" Width="800">
     <Grid>
-        <Button Name="btn_searchImage" Content="이미지 검색" HorizontalAlignment="Center" Height="43" Margin="0,85,0,0" VerticalAlignment="Top" Width="195"/>
-        <Button Content="최근 검색어" HorizontalAlignment="Center" Height="43" Margin="0,143,0,0" VerticalAlignment="Top" Width="195"/>
-        <Button Content="정보 변경" HorizontalAlignment="Center" Height="44" Margin="0,200,0,0" VerticalAlignment="Top" Width="195"/>
-        <Button Content="회원 탈퇴" HorizontalAlignment="Center" Height="44" Margin="0,258,0,0" VerticalAlignment="Top" Width="195"/>
-        <Button Content="로그 아웃" HorizontalAlignment="Center" Height="43" Margin="0,316,0,0" VerticalAlignment="Top" Width="195"/>
+        <Button Name="btn_searchImage" Content="이미지 검색" HorizontalAlignment="Center" Height="43" Margin="0,123,0,0" VerticalAlignment="Top" Width="196"/>
+        <Button Content="최근 검색어" HorizontalAlignment="Center" Height="43" Margin="0,181,0,0" VerticalAlignment="Top" Width="196"/>
+        <Button Content="정보 변경" HorizontalAlignment="Center" Height="44" Margin="0,238,0,0" VerticalAlignment="Top" Width="196"/>
+        <Button Content="회원 탈퇴" HorizontalAlignment="Center" Height="44" Margin="0,296,0,0" VerticalAlignment="Top" Width="196"/>
+        <Button Content="로그 아웃" HorizontalAlignment="Center" Height="43" Margin="0,354,0,0" VerticalAlignment="Top" Width="196"/>
+        <Button Name="btn_back" Content="뒤로 가기" HorizontalAlignment="Left" Height="43" Margin="50,50,0,0" VerticalAlignment="Top" Width="80"/>
+        <TextBlock Name="block_welcome" TextAlignment="Center" FontSize="25" HorizontalAlignment="Center" Height="43" Margin="0,50,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="196"/>
 
     </Grid>
 </Window>

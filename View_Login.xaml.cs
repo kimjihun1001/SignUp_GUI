@@ -19,6 +19,8 @@ namespace SignUp_GUI
     /// </summary>
     public partial class View_Login : Window
     {
+        public static User currentUser;
+
         public View_Login()
         {
             InitializeComponent();
@@ -28,17 +30,49 @@ namespace SignUp_GUI
 
         public void btn_login_Click(object sender, RoutedEventArgs e)
         {
-            View_Main view_Main = new View_Main();
-            this.Hide();
-            view_Main.Show();
+            if (Check_Id(box_id.Text) && Check_Password(box_password.Password))
+            {
+                View_Main view_Main = new View_Main();
+                this.Hide();
+                view_Main.Show();
+            }
+            else
+            {
+                Alert alert = new Alert();
+                alert.block_alert.Text = "로그인 실패";
+                alert.Show();
+            }
         }
 
         public void btn_signup_Click(object sender, RoutedEventArgs e)
         {
             View_SignUp view_SignUp = new View_SignUp();
-
             this.Hide();
             view_SignUp.Show();
         }
+
+        public bool Check_Id(string input)
+        {
+            foreach(User user in TreatDB_mysql.userList)
+            {
+                if(user.Id == input)
+                    return true;
+            }
+            return false;
+        }
+
+        public bool Check_Password(string input)
+        {
+            foreach (User user in TreatDB_mysql.userList)
+            {
+                if (user.Password == input)
+                {
+                    currentUser = user;
+                    return true;
+                }                    
+            }
+            return false;
+        }
+
     }
 }

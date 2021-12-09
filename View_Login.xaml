@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="View_Login" Height="450" Width="800">
     <Grid>
-        <PasswordBox Name="box_id" HorizontalAlignment="Left" Margin="318,198,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="box_pwd" HorizontalAlignment="Left" Margin="318,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox Name="box_password" HorizontalAlignment="Left" Margin="318,198,0,0" VerticalAlignment="Top" Width="120" Password="" />
+        <TextBox Name="box_id" HorizontalAlignment="Left" Margin="318,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button Name="btn_login" Content="로그인" HorizontalAlignment="Left" Margin="450,175,0,0" VerticalAlignment="Top" Height="41" Width="53"/>
         <Button Name="btn_signup" Content="회원가입" HorizontalAlignment="Left" Margin="450,258,0,0" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="318,260,0,0" TextWrapping="Wrap" Text="계정이 없으신가요?" VerticalAlignment="Top" Width="120"/>

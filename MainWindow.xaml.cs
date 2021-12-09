@@ -41,6 +41,10 @@ namespace SignUp_GUI
 
         public void btn_start_Click(object sender, RoutedEventArgs e)
         {
+            TreatDB_mysql treatDB_Mysql = new TreatDB_mysql();
+            treatDB_Mysql.LoadLogDB();
+            treatDB_Mysql.LoadUserDB();
+
             View_Login view_Login = new View_Login();
             this.Hide();
             view_Login.Show();

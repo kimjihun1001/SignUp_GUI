@@ -8,23 +8,25 @@
         Title="View_SignUp" Height="450" Width="800">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="260,103,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="70"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="335,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
-        <Button Content="중복 확인" HorizontalAlignment="Left" Height="20" Margin="440,103,0,0" VerticalAlignment="Top" Width="80"/>
-        <TextBlock HorizontalAlignment="Left" TextAlignment="Center" Height="39" Margin="260,10,0,0" TextWrapping="Wrap" Text="회원가입" VerticalAlignment="Top" FontSize="30" Width="260"/>
+        <TextBox Name="box_id" HorizontalAlignment="Left" Height="20" Margin="335,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" MaxLength="4"/>
+        <Button Name="btn_id" Content="중복 확인" HorizontalAlignment="Left" Height="20" Margin="440,103,0,0" VerticalAlignment="Top" Width="80"/>
+        <TextBlock HorizontalAlignment="Left" TextAlignment="Center" Height="39" Margin="260,50,0,0" TextWrapping="Wrap" Text="회원가입" VerticalAlignment="Top" FontSize="30" Width="260"/>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="260,131,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="70"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="335,131,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+        <TextBox Name="box_password" HorizontalAlignment="Left" Height="20" Margin="335,131,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="260,159,0,0" TextWrapping="Wrap" Text="이름" VerticalAlignment="Top" Width="70"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="335,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" MaxLength="4" Language="ko-kr"  Width="100"/>
+        <TextBox Name="box_name" HorizontalAlignment="Left" Height="20" Margin="335,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" MaxLength="4" Language="ko-kr"  Width="100"/>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="260,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" Text="주민등록번호"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="335,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" MaxLength="6" Width="82"/>
+        <TextBox Name="box_idNumber" HorizontalAlignment="Left" Height="21" Margin="335,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" MaxLength="13" Width="100"/>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="260,213,0,0" TextWrapping="Wrap" Text="전화 번호" VerticalAlignment="Top" Width="70"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="335,213,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" MaxLength="6" Width="100"/>
-        <Button Content="중복 확인" HorizontalAlignment="Left" Height="20" Margin="440,213,0,0" VerticalAlignment="Top" Width="80"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="435,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" MaxLength="6" Width="85"/>
+        <TextBox Name="box_phone" HorizontalAlignment="Left" Height="20" Margin="335,213,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" MaxLength="11" Width="100"/>
+        <Button Name="btn_phone" Content="중복 확인" HorizontalAlignment="Left" Height="20" Margin="440,213,0,0" VerticalAlignment="Top" Width="80"/>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="262,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Text="메일"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="335,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" MaxLength="4" Language="ko-kr"  Width="100"/>
+        <TextBox Name="box_mail" HorizontalAlignment="Left" Height="20" Margin="335,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" MaxLength="4" Language="ko-kr"  Width="100"/>
         <TextBlock HorizontalAlignment="Left" Height="20" Margin="260,267,0,0" TextWrapping="Wrap" Text="주소" VerticalAlignment="Top" Width="70"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="335,267,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" MaxLength="4" Language="ko-kr"  Width="100"/>
+        <TextBox Name="box_address" HorizontalAlignment="Left" Height="20" Margin="335,267,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" MaxLength="4" Language="ko-kr"  Width="100"/>
+        <Button Name="btn_signUp" Content="가입하기" HorizontalAlignment="Left" Height="35" Margin="335,326,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Name="btn_idNumber" Content="중복 확인" HorizontalAlignment="Left" Height="20" Margin="440,187,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="btn_back" Content="뒤로 가기" HorizontalAlignment="Left" Height="35" Margin="50,50,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
