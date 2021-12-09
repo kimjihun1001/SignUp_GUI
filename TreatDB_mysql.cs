@@ -28,7 +28,6 @@ namespace SignUp_GUI
             {
                 User user = new User();
 
-                user.Index = int.Parse(rdr["index"].ToString());
                 user.Id = rdr["id"].ToString();
                 user.Password = rdr["password"].ToString();
                 user.Name = rdr["name"].ToString();
@@ -55,9 +54,9 @@ namespace SignUp_GUI
             // 리스트에 있는 회원 객체 MySQL DB로 보내기 
             foreach (User user in userList)
             {
-                string userInformationString = "VALUES(" + user.Index + ",'" + user.Id + "', '" + user.Password + "', '" + user.Name + "', '" + user.IDNumber + "', '" + user.Phone + "', '" + user.Mail + "', '" + user.Address + "')";
+                string userInformationString = "VALUES('" + user.Id + "', '" + user.Password + "', '" + user.Name + "', '" + user.IDNumber + "', '" + user.Phone + "', '" + user.Mail + "', '" + user.Address + "')";
 
-                MySqlCommand command = new MySqlCommand("INSERT INTO user (index, id, password, name, idNumber, phone, mail, address)" + userInformationString, connection);
+                MySqlCommand command = new MySqlCommand("INSERT INTO user (id, password, name, idNumber, phone, mail, address)" + userInformationString, connection);
 
                 command.ExecuteNonQuery();
             }
@@ -80,7 +79,6 @@ namespace SignUp_GUI
             {
                 Log log = new Log();
 
-                log.Index = int.Parse(rdr["index"].ToString());
                 log.Id = rdr["id"].ToString();
                 log.Searchword = rdr["searchword"].ToString();
 
@@ -102,9 +100,9 @@ namespace SignUp_GUI
             // 리스트에 있는 회원 객체 MySQL DB로 보내기 
             foreach (Log log in logList)
             {
-                string logInformationString = "VALUES(" + log.Index + ", '" + log.Id + "', '" + log.Searchword + "')";
+                string logInformationString = "VALUES('" + log.Id + "', '" + log.Searchword + "')";
 
-                MySqlCommand command = new MySqlCommand("INSERT INTO log (index, id, searchword)" + logInformationString, connection);
+                MySqlCommand command = new MySqlCommand("INSERT INTO log (id, searchword)" + logInformationString, connection);
 
                 command.ExecuteNonQuery();
             }

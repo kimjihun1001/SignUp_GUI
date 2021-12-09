@@ -80,9 +80,9 @@ namespace SignUp_GUI
                 alert.block_alert.Text = "숫자만 입력해야 합니다. 다시 입력하세요.";
                 alert.Show();
             }
-            else if (input.Length != 11)
+            else if (input.Length != 13)
             {
-                alert.block_alert.Text = "11자리를 입력해야 합니다. 다시 입력하세요.";
+                alert.block_alert.Text = "13자리를 입력해야 합니다. 다시 입력하세요.";
                 alert.Show();
             }
             else
@@ -197,9 +197,9 @@ namespace SignUp_GUI
                 alert.block_alert.Text = "숫자만 입력해야 합니다. 다시 입력하세요.";
                 alert.Show();
             }
-            else if (input.Length != 13)
+            else if (input.Length != 11)
             {
-                alert.block_alert.Text = "13자리를 입력해야 합니다. 다시 입력하세요.";
+                alert.block_alert.Text = "11자리를 입력해야 합니다. 다시 입력하세요.";
                 alert.Show();
             }
             else
